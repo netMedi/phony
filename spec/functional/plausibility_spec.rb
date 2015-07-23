@@ -66,6 +66,9 @@ describe 'plausibility' do
         Phony.plausible?('+358 50 123 45').should be_true
         Phony.plausible?('+358 50 123 45 6').should be_true
         Phony.plausible?('+358 50 123 45 67').should be_true
+        Phony.plausible?('+358 50 123 45 678').should be_true
+        Phony.plausible?('+358 50 123 45 678 9').should be_true
+        Phony.plausible?('+358 50 123 45 678 90').should be_true
         Phony.plausible?('+358 9 123 45').should be_true
         Phony.plausible?('+358 9 123 456').should be_true
         Phony.plausible?('+358 9 123 4567').should be_true
