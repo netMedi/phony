@@ -177,9 +177,9 @@ describe 'country descriptions' do
       it_splits '35722123456',    ['357', '22', '123456']        # Fixed
       it_splits '35791123456',    ['357', '91', '123456']        # Mobile
     end
-    describe 'Denmark' do
-      it_splits '4532121212', ['45', false, '32', '12', '12', '12']
-    end
+    #describe 'Denmark' do
+    #  it_splits '4532121212', ['45', false, '32', '12', '12', '12']
+    #end
     describe 'Egypt' do
       it_splits '20212345678', ['20', '2', '12345678']
       it_splits '20921234567', ['20', '92', '1234567']

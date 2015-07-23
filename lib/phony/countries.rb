@@ -150,8 +150,9 @@ Phony.define do
 
   # Denmark.
   #
-  country '45',
-          none >> split(2,2,2,2..2)
+  # Disabled in our very own branch because it breaks some Finnish numbers 
+  #country '45',
+  #        none >> split(2,2,2,2..2)
 
   # country '46' # Sweden, see special file.
 
